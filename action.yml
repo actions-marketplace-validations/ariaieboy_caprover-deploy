@@ -1,7 +1,7 @@
-name: "Deploy to Caprover"
+name: "Deploy Docker to Caprover"
 
 description: "An Action to build a docker image and deploy to Caprover"
-author: "Jasir Zaeem"
+author: "Ariaieboy"
 
 branding:
   icon: upload-cloud
