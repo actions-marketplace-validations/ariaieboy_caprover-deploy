@@ -28,9 +28,9 @@ Once you have done these, have a Dockerfile in your repo and have the secrets se
 ## Example usage
 
 ```yaml
-uses: JasirZaeem/caprover-deploy@v1.1
+uses: ariaieboy/caprover-deploy@1.2.2
 with:
-  token: ${{ secrets.CAPROVER_PASSWORD }}
+  token: ${{ secrets.GITHUB_TOKEN }}
   server: "https://captain.example.com"
   password: ${{ secrets.CAPROVER_PASSWORD }}
   app: "application"
@@ -54,7 +54,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v2
       - name: Deploy to Caprover
-        uses: JasirZaeem/caprover-deploy@v1.1
+        uses: ariaieboy/caprover-deploy@1.2.2
         with:
           token: ${{secrets.GITHUB_TOKEN}}
           server: "https://captain.example.com"
